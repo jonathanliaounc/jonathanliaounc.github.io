@@ -1,7 +1,322 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Guide to Surviving UNC</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px 100px;
+    background-color:white;12
+    padding-bottom: 12px;
+}
+
+/* Style the header */
+header {
+    background-color: rgb(75, 156, 211);
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    height: 320px;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+    
+p {
+    display: block;
+    padding: 16px;
+    font-size: 18px;
+    background-color: rgb(75, 156, 211);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0;
+}
+    
+h2 {
+    padding-top: 12px;
+    text-align: center;
+}
+
+h2 span {
+    background-color: rgb(75, 156, 211);
+    padding: 10px;
+}
+    
+.image {
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: rgb(75, 156, 211);
+    border-width: thick;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+    
+#check {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+    
+.section .column:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+#noScroll {
+    overflow: hidden;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+</style>
+</head>
 <body>
-<h1>Hello Wold</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<header>
+    <h1>Survival Guide for Struggling UNC Students</h1>
+</header>
+<section id="question1" class="section">
+    <h2><span>What is Troubling You?</span></h2>
+    <div class="row">
+        <div class="column">
+            <p class="answers">Academics</p>
+            <img id="Academics" class="image" src="../Images/academics.png" width="300" height="250" alt="Academics">
+        </div>
+        <div class="column">
+            <p class="answers">Activities</p>
+            <img id="Activities" class="image" src="../Images/activities.png" width="300" height="250" alt="Activities">
+        </div>
+        <div class="column">
+            <p class="answers">Food</p>
+            <img id="Food" class="image" src="../Images/food.png" width="300" height="250" alt="Food ">
+        </div>
+        <div class="column">
+            <p class="answers">Finances</p>
+            <img id="Finances" class="image" src="../Images/finances.png" width="300" height="250" alt="Finances">
+        </div>
+    </div>
+</section>
+    
+<section id="question2" class="section">
+    <h2><span>What Are You Studying?</span></h2>
+    <div class="row">
+        <div class="column">            
+            <p class="answers">STEM</p>
+            <img id="STEM" class="image" src="../Images/STEM.png" width="300" height="250" alt="STEM">
+        </div>
+        <div class="column">
+            <p class="answers">Medicine</p>
+            <img id="Medicine" class="image" src="../Images/medicine.png" width="300" height="250" alt="Medicine">
+        </div>
+        <div class="column">
+            <p class="answers">Business</p>
+            <img id="Business" class="image" src="../Images/business.png" width="300" height="250" alt="Business">
+        </div>
+        <div class="column">
+            <p class="answers">Humanities</p>
+            <img id="Humanities" class="image" src="../Images/humanities.png" width="300" height="250" alt="Humanities">
+        </div>
+    </div>
+</section>
+
+<section id="question3" class="section">
+    <h2><span>What Year Are You?</span></h2>
+    <div class="row">
+        <div class="column">
+            <p class="answers">Freshman</p>
+            <img id="Freshman" class="image" src="../Images/freshman.png" width="300" height="250" alt="Freshman">
+        </div>
+        <div class="column">
+            <p class="answers">Sophomore</p>
+            <img id="Sophomore" class="image" src="../Images/sophomore.png" width="300" height="250" alt="Sophomore">
+        </div>
+        <div class="column">
+            <p class="answers">Junior</p>
+            <img id="Junior" class="image" src="../Images/junior.png" width="300" height="250" alt="Junior">
+        </div>
+        <div class="column">
+            <p class="answers">Senior</p>
+            <img id="Senior" class="image" src="../Images/senior.png" width="300" height="250" alt="Senior">
+        </div>
+    </div>
+</section>
+    
+<script>
+var sectionList;
+var imageList;
+var columnList;
+var answerList;
+var clickedList = new Array(3);
+var count;
+var check = new Image(150, 150);
+
+window.onload=function() {
+    sectionList = document.getElementsByClassName("section");
+    imageList = document.getElementsByClassName("image");
+    columnList = document.getElementsByClassName("column");
+    answerList = document.getElementsByClassName("answers");
+    check.src = "../Images/checkMark.png";
+    count = 0;
+    $(function(){
+        $(check).attr('id', 'check');
+    });
+    sectionList[1].style.display = "none";
+    sectionList[2].style.display = "none";
+    
+    for (var i = 0; i <imageList.length; i++) {
+        imageList[i].onclick = function() {
+            erasePicture(this, function() {
+                isDone();
+            });
+        }
+    }
+    
+    check.onclick = function() {
+        location.reload();
+    }
+}
+
+function erasePicture(imageClicked, callback) {
+    if (sectionList[0].contains(imageClicked)) {
+        for (var i = 0; i < imageList.length; i++) {
+            if (imageList[i] == imageClicked) {
+                clickedList[count] = answerList[i];
+                columnList[i].appendChild(check.cloneNode(true));
+                $(function(){
+                    $(sectionList[0]).removeClass('section');
+                });
+                $(document).ready(function(){
+                    $(sectionList[0]).fadeIn(2500);
+                });
+                count++;
+            }
+        }
+    }
+    callback();
+}
+
+function isDone() {
+    if (count == 3) {
+        var r = new Array(3);
+        r[0] = "You have questions about " + "<b>" + clickedList[0].innerHTML + "</b>";
+        r[1] = "You are in the field of " + "<b>" + clickedList[1].innerHTML + "</b>";
+        r[2] = "You are a " + "<b>" + clickedList[2].innerHTML + "</b>";
+        ConfirmDialog(r);
+        $(function(){
+            $(document.body).attr('id', 'noScroll');
+        });
+    }
+}
+
+
+function ConfirmDialog(message) {
+    $('<div></div>').appendTo('body')
+                    .html('<ul><li>'+message[0]+'</li></ul>' +
+                          '<ul><li>'+message[1]+'</li></ul>' +
+                          '<ul><li>'+message[2]+'</li></ul>')
+                    .dialog({
+                        modal: false, title: 'Please Confirm the Following...', zIndex: 1000, autoOpen: true,
+                        width: '325', resizable: false, maxHeight: 270, draggable: false, show: 2000,
+                        buttons: {
+                            Yes: function () {
+                                alert("Redirecting...");
+                                redirectWebpage();
+                            },
+                            No: function () {
+                                alert("Please Try Again");
+                                location.reload();
+                                $(this).dialog("close");
+                            }
+                        },
+                        close: function (event, ui) {
+                            location.reload();
+                            $(this).remove();
+                        }
+                    });
+}
+
+function redirectWebpage() {
+    if (clickedList[0] == answerList[1]) {
+        window.location = "https://heellife.unc.edu/organizations";
+    } else if (clickedList[0] == answerList[2] && (clickedList[2] == answerList[9] || clickedList[2] == answerList[10] || clickedList[2] == answerList[11])) {
+        window.location = "http://www.downtownchapelhill.com/dining/";
+    } else if (clickedList[0] == answerList[2] && clickedList[2] == answerList[8]) {
+        window.location = "https://dining.unc.edu/menu-hours/";
+    } else if (clickedList[0] == answerList[3] && clickedList[2] == answerList[11]) {
+        window.location = "https://www.mint.com/money-management-2/money-management-tips-for-recent-college-grads";
+    } else if (clickedList[0] == answerList[3] && (clickedList[2] == answerList[8] || clickedList[2] == answerList[9] || clickedList[2] == answerList[10])) {
+        window.location = "https://studentaid.unc.edu/";
+    } else if (clickedList[0] == answerList[0] && clickedList[1] == answerList[4] && clickedList[2] == answerList[8]) {
+        window.location = "https://blog.collegevine.com/a-day-in-the-life-of-a-stem-major/";
+    } else if (clickedList[0] == answerList[0] && clickedList[1] == answerList[4] && clickedList[2] == answerList[11]) {
+        window.location = "http://www.stemjobs.com/";
+    } else if (clickedList[0] == answerList[0] && clickedList[1] == answerList[4] && (clickedList[2] == answerList[9] || clickedList[2] == answerList[10])) {
+        window.location = "http://learningcenter.unc.edu/services/stem/";
+    } else if (clickedList[0] == answerList[0] && clickedList[1] == answerList[5] && (clickedList[2] == answerList[8] || clickedList[2] == answerList[9])) {
+        window.location = "https://careers.unc.edu/students/pre-professional-pre-graduate-advising/prehealth";
+    } else if (clickedList[0] == answerList[0] && clickedList[1] == answerList[5] && (clickedList[2] == answerList[10] || clickedList[2] == answerList[11])) {
+        window.location = "https://students-residents.aamc.org/applying-medical-school/taking-mcat-exam/";
+    } else if (clickedList[0] == answerList[0] && clickedList[1] == answerList[6]) {
+        window.location = "http://www.kenan-flagler.unc.edu/programs/undergraduate-business";
+    } else if (clickedList[0] == answerList[0] && clickedList[1] == answerList[7] && (clickedList[2] == answerList[8] || clickedList[2] == answerList[9])) {
+        window.location = "https://humanities.unc.edu/";
+    } else if (clickedList[0] == answerList[0] && clickedList[1] == answerList[7] && (clickedList[2] == answerList[10] || clickedList[2] == answerList[11])) {
+        window.location = "https://chroniclevitae.com/jobs/position_types/41";
+    }
+}
+    
+</script>
 </body>
 </html>
