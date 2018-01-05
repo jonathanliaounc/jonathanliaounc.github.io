@@ -189,6 +189,7 @@ ul {
         <div class="column">
             <p class="answers">Senior</p>
             <img id="Senior" class="image" src="../Images/senior.png" width="300" height="250" alt="Senior">
+            <img id="check" src="../Images/checkMark.png" width="150" height="150" alt="Check">
         </div>
     </div>
 </section>
@@ -200,18 +201,18 @@ var columnList;
 var answerList;
 var clickedList = new Array(3);
 var count;
-var check = new Image(150, 150);
+var initialCheck;
+var newCheck;
 
 window.onload=function() {
     sectionList = document.getElementsByClassName("section");
     imageList = document.getElementsByClassName("image");
     columnList = document.getElementsByClassName("column");
     answerList = document.getElementsByClassName("answers");
-    check.src = "../Images/checkMark.png";
+    initialCheck = document.getElementById("check");
+    newCheck = initialCheck.cloneNode(true);
+    initialCheck.style.display = "none";
     count = 0;
-    $(function(){
-        $(check).attr('id', 'check');
-    });
     sectionList[1].style.display = "none";
     sectionList[2].style.display = "none";
     
@@ -222,10 +223,6 @@ window.onload=function() {
             });
         }
     }
-    
-    check.onclick = function() {
-        location.reload();
-    }
 }
 
 function erasePicture(imageClicked, callback) {
@@ -233,7 +230,7 @@ function erasePicture(imageClicked, callback) {
         for (var i = 0; i < imageList.length; i++) {
             if (imageList[i] == imageClicked) {
                 clickedList[count] = answerList[i];
-                columnList[i].appendChild(check.cloneNode(true));
+                columnList[i].appendChild(newCheck.cloneNode(true));
                 $(function(){
                     $(sectionList[0]).removeClass('section');
                 });
