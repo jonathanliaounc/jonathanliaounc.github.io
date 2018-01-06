@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Guide to Surviving UNC</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="/resources/demos/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,57 +17,22 @@
 
 body {
     margin: 10px 100px;
-    background-color:white;12
     padding-bottom: 12px;
 }
 
-/* Style the header */
 header {
     background-color: rgb(75, 156, 211);
-    padding: 10px;
+    padding: 20px;
+}
+
+h1 {
     text-align: center;
-    color: black;
-    font-size: 28px;
+    background-color: rgb(75, 156, 211);
+    font-size: 54px;
+    font-family: "Times New Roman", Times, serif;
     font-weight: bolder;
 }
-
-/* Create four equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 25%;
-    height: 320px;
-    text-align: center;
-    padding: 15px;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-}
-    
-p {
-    display: block;
-    padding: 16px;
-    font-size: 18px;
-    background-color: rgb(75, 156, 211);
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0;
-}
-    
+        
 h2 {
     padding-top: 12px;
     text-align: center;
@@ -75,14 +41,29 @@ h2 {
 h2 span {
     background-color: rgb(75, 156, 211);
     padding: 10px;
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
 }
-    
+
+h3 {
+    display: block;
+    padding: 12px;
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgb(75, 156, 211);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0;
+}
+
 .image {
     border-bottom-style: solid;
     border-left-style: solid;
     border-right-style: solid;
+    border-width:thick;
     border-color: rgb(75, 156, 211);
-    border-width: thick;
     padding-top: 5px;
     padding-bottom: 10px;
     padding-left: 5px;
@@ -91,8 +72,14 @@ h2 span {
     
 #check {
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 30%;
+    left: 27%;
+}
+
+.column {
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
 }
     
 .section .column:hover {
@@ -103,10 +90,18 @@ h2 span {
 ul {
     padding-left: 10px;
 }
+    
+.w3-container {
+    background-color: rgb(75, 156, 211);
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
 
-#noScroll {
+.noScroll {
     overflow: hidden;
 }
+
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -123,77 +118,129 @@ ul {
 
 </style>
 </head>
-<body>
+
+<body> 
 <header>
     <h1>Survival Guide for Struggling UNC Students</h1>
 </header>
+
 <section id="question1" class="section">
-    <h2><span>What is Troubling You?</span></h2>
-    <div class="row">
+<h2><span>What is Troubling You?</span></h2>
+<div class="w3-row-padding" style="margin-top:32px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="column">
-            <p class="answers">Academics</p>
-            <img id="Academics" class="image" src="../Images/academics.png" width="300" height="250" alt="Academics">
-        </div>
-        <div class="column">
-            <p class="answers">Activities</p>
-            <img id="Activities" class="image" src="../Images/activities.png" width="300" height="250" alt="Activities">
-        </div>
-        <div class="column">
-            <p class="answers">Food</p>
-            <img id="Food" class="image" src="../Images/food.png" width="300" height="250" alt="Food ">
-        </div>
-        <div class="column">
-            <p class="answers">Finances</p>
-            <img id="Finances" class="image" src="../Images/finances.png" width="300" height="250" alt="Finances">
+            <div class="w3-container">
+                <h3>Academics</h3>
+            </div>
+            <div class="holder">
+                <img class="image" src="../Images/rsz_academics.png" alt="Academics" style="width:100%">
+            </div>
         </div>
     </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="column">
+            <div class="w3-container">
+                <h3>Activities</h3>
+            </div>
+                <img class="image" src="../Images/rsz_activities.png" alt="Activities" style="width:100%">
+        </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="column">
+            <div class="w3-container">
+                <h3>Food</h3>
+            </div>
+                <img class="image" src="../Images/rsz_food.png" alt="Food" style="width:100%">
+        </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="column">
+            <div class="w3-container">
+                <h3>Finances</h3>
+            </div>
+                <img class="image" src="../Images/rsz_finances.png" alt="Finances" style="width:100%">
+        </div>
+    </div>
+</div>
 </section>
-    
+
 <section id="question2" class="section">
-    <h2><span>What Are You Studying?</span></h2>
-    <div class="row">
-        <div class="column">            
-            <p class="answers">STEM</p>
-            <img id="STEM" class="image" src="../Images/STEM.png" width="300" height="250" alt="STEM">
-        </div>
+<h2><span>What Are You Studying?</span></h2>
+<div class="w3-row-padding" style="margin-top:32px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="column">
-            <p class="answers">Medicine</p>
-            <img id="Medicine" class="image" src="../Images/medicine.png" width="300" height="250" alt="Medicine">
-        </div>
-        <div class="column">
-            <p class="answers">Business</p>
-            <img id="Business" class="image" src="../Images/business.png" width="300" height="250" alt="Business">
-        </div>
-        <div class="column">
-            <p class="answers">Humanities</p>
-            <img id="Humanities" class="image" src="../Images/humanities.png" width="300" height="250" alt="Humanities">
+            <div class="w3-container">
+                <h3>STEM</h3>
+            </div>
+                <img class="image" src="../Images/rsz_stem.png" alt="STEM" style="width:100%">
         </div>
     </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="column">
+            <div class="w3-container">
+                <h3>Medicine</h3>
+            </div>
+                <img class="image" src="../Images/rsz_medicine.png" alt="Medicine" style="width:100%">
+        </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="column">
+            <div class="w3-container">
+                <h3>Business</h3>
+            </div>
+                <img class="image" src="../Images/rsz_business.png" alt="Business" style="width:100%">
+        </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="column">
+            <div class="w3-container">
+                <h3>Humanities</h3>
+            </div>
+                <img class="image" src="../Images/rsz_humanities.png" alt="Humanities" style="width:100%">
+        </div>
+    </div>
+</div>
 </section>
 
 <section id="question3" class="section">
-    <h2><span>What Year Are You?</span></h2>
-    <div class="row">
+<h2><span>What Are You Studying?</span></h2>
+<div class="w3-row-padding" style="margin-top:32px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="column">
-            <p class="answers">Freshman</p>
-            <img id="Freshman" class="image" src="../Images/freshman.png" width="300" height="250" alt="Freshman">
-        </div>
-        <div class="column">
-            <p class="answers">Sophomore</p>
-            <img id="Sophomore" class="image" src="../Images/sophomore.png" width="300" height="250" alt="Sophomore">
-        </div>
-        <div class="column">
-            <p class="answers">Junior</p>
-            <img id="Junior" class="image" src="../Images/junior.png" width="300" height="250" alt="Junior">
-        </div>
-        <div class="column">
-            <p class="answers">Senior</p>
-            <img id="Senior" class="image" src="../Images/senior.png" width="300" height="250" alt="Senior">
-            <img id="check" src="../Images/checkMark.png" width="150" height="150" alt="Check">
+            <div class="w3-container">
+                <h3>Freshman</h3>
+            </div>
+                <img class="image" src="../Images/rsz_freshman.png" alt="Freshman" style="width:100%">
         </div>
     </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="column">
+            <div class="w3-container">
+                <h3>Sophomore</h3>
+            </div>
+                <img class="image" src="../Images/rsz_sophomore.png" alt="Sophomore" style="width:100%">
+        </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="column">
+            <div class="w3-container">
+                <h3>Junior</h3>
+            </div>
+                <img class="image" src="../Images/rsz_junior.png" alt="Junior" style="width:100%">
+        </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="column">
+            <div class="w3-container">
+                <h3>Senior</h3>
+            </div>
+                <img class="image" src="../Images/rsz_senior.png" alt="Senior" style="width:100%">
+                <img id="check" src="../Images/checkMark.png" width="150" height="150" alt="Check">
+        </div>
+    </div>
+</div>
 </section>
-    
+
 <script>
 var sectionList;
 var imageList;
@@ -208,7 +255,7 @@ window.onload=function() {
     sectionList = document.getElementsByClassName("section");
     imageList = document.getElementsByClassName("image");
     columnList = document.getElementsByClassName("column");
-    answerList = document.getElementsByClassName("answers");
+    answerList = document.getElementsByTagName("h3");
     initialCheck = document.getElementById("check");
     newCheck = initialCheck.cloneNode(true);
     initialCheck.style.display = "none";
@@ -223,6 +270,7 @@ window.onload=function() {
             });
         }
     }
+
 }
 
 function erasePicture(imageClicked, callback) {
@@ -251,9 +299,7 @@ function isDone() {
         r[1] = "You are in the field of " + "<b>" + clickedList[1].innerHTML + "</b>";
         r[2] = "You are a " + "<b>" + clickedList[2].innerHTML + "</b>";
         ConfirmDialog(r);
-        $(function(){
-            $(document.body).attr('id', 'noScroll');
-        });
+        $("html").addClass("noScroll");
     }
 }
 
@@ -265,7 +311,7 @@ function ConfirmDialog(message) {
                           '<ul><li>'+message[2]+'</li></ul>')
                     .dialog({
                         modal: false, title: 'Please Confirm the Following...', zIndex: 1000, autoOpen: true,
-                        width: '325', resizable: false, maxHeight: 270, draggable: false, show: 2000,
+                        width: '325', resizable: false, maxHeight: 275, draggable: false, show: 2000,
                         buttons: {
                             Yes: function () {
                                 alert("Redirecting...");
